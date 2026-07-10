@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Franco Almada | WDD 231</title>
+    <title>Home | Franco Taiel Almada | WDD 231</title>
 
     <meta name="description"
-        content="WDD 231 course home page for Franco Almada featuring responsive navigation and course activities.">
+        content="WDD 231 course home page for Franco Almada featuring responsive navigation, learning activities, and course projects.">
     <meta name="author" content="Franco Almada">
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
 
     <script src="scripts/navigation.js" defer></script>
 </head>
@@ -20,18 +21,27 @@
 <body>
 
     <header>
-        <img src="images/logo.svg" alt="Franco Almada site logo" width="1" height="1">
+        <img src="images/logo.svg" alt="FTA personal site logo" width="48" height="48">
 
         <span>Franco Almada</span>
 
-        <button id="nav-button" class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false">
+        <button id="nav-button" class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false"
+            aria-controls="nav-bar">
         </button>
     </header>
 
-    <nav id="nav-menu" class="navigation" aria-label="Main navigation">
-        <a href="index.html" class="active">Home</a>
-        <a href="#">Chamber</a>
-        <a href="#">Final</a>
+    <nav id="nav-bar" class="navigation" aria-label="Main navigation">
+        <ul>
+            <li class="current">
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="#">Chamber</a>
+            </li>
+            <li>
+                <a href="#">Final Project</a>
+            </li>
+        </ul>
     </nav>
 
     <main>
@@ -48,8 +58,45 @@
     </main>
 
     <footer>
-        <p>&copy; <span id="currentyear"></span> Franco Almada | Argentina</p>
+
+        <div class="social">
+
+            <a href="https://github.com/Falmada15" target="_blank" aria-label="GitHub Profile">
+
+                <img src="images/github.svg" alt="GitHub" width="48" height="48">
+            </a>
+
+            <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn Profile">
+
+                <img src="images/linkedin.svg" alt="LinkedIn" width="48" height="48">
+            </a>
+
+            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram Profile">
+
+                <img src="images/instagram.svg" alt="Instagram" width="48" height="48">
+            </a>
+
+            <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook Profile">
+
+                <img src="images/facebook.svg" alt="Facebook" width="48" height="48">
+            </a>
+
+        </div>
+
+        <p>
+            Franco Almada
+        </p>
+
+        <p>
+            WDD 231
+        </p>
+
+        <p>
+            © <span id="currentyear"></span>
+        </p>
+
         <p id="lastModified"></p>
+
     </footer>
 
 </body>
