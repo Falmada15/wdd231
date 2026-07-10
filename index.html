@@ -8,14 +8,20 @@
     <title>Home | Franco Taiel Almada | WDD 231</title>
 
     <meta name="description"
-        content="WDD 231 course home page for Franco Almada featuring responsive navigation, learning activities, and course projects.">
+        content="Course home page for Franco Almada featuring WDD 231 assignments, personal information, and dynamically filtered certificate courses.">
     <meta name="author" content="Franco Almada">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
 
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
 
 <body>
@@ -36,7 +42,7 @@
                 <a href="index.html">Home</a>
             </li>
             <li>
-                <a href="#">Chamber</a>
+                <a href="#">Chamber Project</a>
             </li>
             <li>
                 <a href="#">Final Project</a>
@@ -45,57 +51,107 @@
     </nav>
 
     <main>
+
         <h1>Home</h1>
 
-        <section>
-            <h2>Welcome</h2>
+        <div class="home-grid">
 
-            <p>
-                This page contains the learning activities and assignments
-                completed by Franco Almada for WDD 231.
-            </p>
-        </section>
+            <section class="about-section">
+                <h2>About Me</h2>
+
+                <div class="section-content">
+                    <p>
+                        My name is Franco Almada, and I live in Santa Fe,
+                        Argentina. I am studying Web and Computer Programming
+                        through BYU–Pathway Worldwide.
+                    </p>
+
+                    <p>
+                        I work with technology and operate a local business
+                        focused on mobile phone repairs, software solutions,
+                        computers, and electronic accessories.
+                    </p>
+
+                    <p>
+                        I enjoy learning how websites and applications are
+                        created. My goal is to continue improving my skills in
+                        HTML, CSS, JavaScript, responsive design, accessibility,
+                        and frontend development.
+                    </p>
+                </div>
+            </section>
+
+            <section class="photo-section">
+                <h2>Student Photo</h2>
+
+                <div class="section-content photo-container">
+                    <img src="images/profile.webp" alt="Franco Almada" width="300" height="400">
+                </div>
+            </section>
+
+            <section class="courses-section">
+                <h2>Web Certificate Courses</h2>
+
+                <div class="course-filters" aria-label="Course filters">
+                    <button id="all-courses" class="filter-button active-filter" type="button">
+                        All
+                    </button>
+
+                    <button id="cse-courses" class="filter-button" type="button">
+                        CSE
+                    </button>
+
+                    <button id="wdd-courses" class="filter-button" type="button">
+                        WDD
+                    </button>
+                </div>
+
+                <div id="course-list" class="course-list"></div>
+
+                <p id="total-credits" class="total-credits"></p>
+
+                <p class="course-key">
+                    Completed courses are marked with a check symbol.
+                </p>
+            </section>
+
+        </div>
+
     </main>
 
     <footer>
 
-        <div class="social">
+        <div class="social-links">
 
-            <a href="https://github.com/Falmada15" target="_blank" aria-label="GitHub Profile">
-
-                <img src="images/github.svg" alt="GitHub" width="48" height="48">
+            <a href="https://github.com/Falmada15" target="_blank" rel="noopener noreferrer"
+                aria-label="Franco Almada on GitHub">
+                <img src="images/github.svg" alt="" width="44" height="44">
             </a>
 
-            <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn Profile">
-
-                <img src="images/linkedin.svg" alt="LinkedIn" width="48" height="48">
+            <a href="https://www.linkedin.com/in/franco-taiel-almada?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                target="_blank" rel="noopener noreferrer" aria-label="Franco Almada on LinkedIn">
+                <img src="images/linkedin.svg" alt="" width="44" height="44">
             </a>
 
-            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram Profile">
+            <a href="https://www.instagram.com/franco_tahieel?igsh=bzF5bGQ0NWtucHRw" target="_blank"
+                rel="noopener noreferrer" aria-label="Franco Almada on Instagram">
+                <img src="images/instagram.svg" alt="" width="44" height="44">
 
-                <img src="images/instagram.svg" alt="Instagram" width="48" height="48">
-            </a>
-
-            <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook Profile">
-
-                <img src="images/facebook.svg" alt="Facebook" width="48" height="48">
-            </a>
+                <a href="https://www.facebook.com/share/18vit42i33/" target="_blank" rel="noopener noreferrer"
+                    aria-label="Franco Almada on Facebook">
+                    <img src="images/facebook.svg" alt="" width="44" height="44">
+                </a>
 
         </div>
 
-        <p>
-            Franco Almada
-        </p>
+        <div class="footer-information">
+            <p>
+                &copy; <span id="currentyear"></span>
+                Franco Almada | Santa Fe, Argentina
+            </p>
 
-        <p>
-            WDD 231
-        </p>
-
-        <p>
-            © <span id="currentyear"></span>
-        </p>
-
-        <p id="lastModified"></p>
+            <p id="lastModified"></p>
+        </div>
 
     </footer>
 

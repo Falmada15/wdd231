@@ -1,7 +1,5 @@
 const navButton = document.querySelector("#nav-button");
 const navBar = document.querySelector("#nav-bar");
-const currentYear = document.querySelector("#currentyear");
-const lastModified = document.querySelector("#lastModified");
 
 function toggleNavigation() {
     const isOpen = navButton.classList.toggle("show");
@@ -16,6 +14,3 @@ function toggleNavigation() {
 }
 
 navButton.addEventListener("click", toggleNavigation);
-
-currentYear.textContent = `${new Date().getFullYear()}`;
-lastModified.textContent = `Last Modified: ${document.lastModified}`;

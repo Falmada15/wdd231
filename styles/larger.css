@@ -1,7 +1,8 @@
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 700px) {
 
     header {
         grid-template-columns: 60px auto;
+        padding: 0.75rem max(1rem, calc((100% - 1100px) / 2));
     }
 
     header img {
@@ -24,28 +25,53 @@
     .navigation ul {
         display: flex;
         justify-content: center;
-        background-color: var(--secondary-color);
     }
 
     .navigation li {
-        flex: 1 1 auto;
-        max-width: 250px;
-        border-right: 1px solid #b9c8d4;
+        flex: 1 1 0;
+        max-width: 280px;
+        border-right: 1px solid #41505d;
         border-bottom: none;
     }
 
     .navigation li:first-child {
-        border-left: 1px solid #b9c8d4;
+        border-left: 1px solid #41505d;
     }
 
     .navigation a {
-        display: flex;
-        align-items: center;
         justify-content: center;
-        min-height: 48px;
     }
 
-    .navigation .current a {
-        border-bottom: 4px solid var(--accent-color);
+    .home-grid {
+        grid-template-columns: 2fr 1fr;
+        align-items: stretch;
+    }
+
+    .about-section,
+    .photo-section {
+        min-height: 390px;
+    }
+
+    .courses-section {
+        grid-column: 1 / -1;
+    }
+
+    .course-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    footer {
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        max-width: none;
+        text-align: left;
+    }
+
+    .social-links {
+        justify-content: flex-start;
+    }
+
+    .footer-information {
+        text-align: right;
     }
 }
