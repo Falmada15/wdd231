@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="logo-title logo-description">
+
+    <title id="logo-title">FTA Personal Logo</title>
+
+    <desc id="logo-description">
+        A modern geometric logo with the initials FTA in blue and white.
+    </desc>
+
+    <defs>
+        <linearGradient id="logo-gradient" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#003366"></stop>
+            <stop offset="100%" stop-color="#6CB4EE"></stop>
+        </linearGradient>
+    </defs>
+
+    <rect x="8" y="8" width="104" height="104" rx="26" fill="url(#logo-gradient)"></rect>
+
+    <path d="M28 88 L88 28" stroke="#ffffff" stroke-width="8" stroke-linecap="round" opacity=".18"></path>
+
+    <circle cx="92" cy="28" r="7" fill="#f4b400"></circle>
+
+    <text x="60" y="69" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" letter-spacing="2" fill="#ffffff">
+        FTA
+    </text>
+
+    <path d="M31 82 H89" stroke="#ffffff" stroke-width="4" stroke-linecap="round"></path>
+</svg>
