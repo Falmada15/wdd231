@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 140">
+    <rect width="180" height="140" rx="18" fill="#f2e6d5"></rect>
+    <path d="M55 45h60v35c0 28-60 28-60 0z" fill="#7a4c2a"></path>
+    <path d="M115 52c28-5 28 32 2 30" fill="none" stroke="#7a4c2a" stroke-width="8"></path>
+    <path d="M70 28c-10 14 10 18 0 31M90 28c-10 14 10 18 0 31" fill="none" stroke="#b77842" stroke-width="5"></path>
+    <text x="90" y="123" text-anchor="middle" font-family="Arial" font-weight="700" fill="#4a2c19">RÍO NORTE</text>
+</svg>

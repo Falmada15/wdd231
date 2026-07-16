@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 140">
+    <rect width="180" height="140" rx="18" fill="#dff3f8"></rect>
+    <rect x="42" y="30" width="96" height="64" rx="7" fill="#123b5d"></rect>
+    <rect x="50" y="38" width="80" height="48" fill="#79c2d0"></rect>
+    <path d="M70 108h40M82 94v14M98 94v14" stroke="#123b5d" stroke-width="7" stroke-linecap="round"></path>
+    <text x="90" y="128" text-anchor="middle" font-family="Arial" font-weight="700" fill="#123b5d">LITORAL TECH</text>
+</svg>

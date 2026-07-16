@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 140">
+    <rect width="180" height="140" rx="18" fill="#e7f4fa"></rect>
+    <rect x="48" y="28" width="84" height="72" rx="5" fill="#123b5d"></rect>
+    <g fill="#f7d774">
+        <rect x="60" y="40" width="13" height="13"></rect>
+        <rect x="84" y="40" width="13" height="13"></rect>
+        <rect x="108" y="40" width="13" height="13"></rect>
+        <rect x="60" y="64" width="13" height="13"></rect>
+        <rect x="108" y="64" width="13" height="13"></rect>
+    </g>
+    <rect x="83" y="70" width="16" height="30" fill="#ffffff"></rect>
+    <text x="90" y="124" text-anchor="middle" font-family="Arial" font-weight="700" fill="#123b5d">COSTANERA HOTEL</text>
+</svg>

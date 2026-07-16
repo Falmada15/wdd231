@@ -1,0 +1,74 @@
+{
+    "members": [
+        {
+            "name": "Río Norte Café",
+            "address": "Bulevar Gálvez 1680, Santa Fe",
+            "phone": "+54 342 455-1101",
+            "email": "hola@rionortecafe.com",
+            "website": "https://example.com/rio-norte",
+            "image": "rio-norte.svg",
+            "membership": 3,
+            "tagline": "Specialty coffee inspired by the Litoral."
+        },
+        {
+            "name": "Litoral Tech Solutions",
+            "address": "San Jerónimo 2845, Santa Fe",
+            "phone": "+54 342 455-2202",
+            "email": "contacto@litoraltech.com",
+            "website": "https://example.com/litoral-tech",
+            "image": "litoral-tech.svg",
+            "membership": 3,
+            "tagline": "Digital solutions for growing businesses."
+        },
+        {
+            "name": "Puerto Creativo",
+            "address": "Dique II, Puerto de Santa Fe",
+            "phone": "+54 342 455-3303",
+            "email": "equipo@puertocreativo.com",
+            "website": "https://example.com/puerto-creativo",
+            "image": "puerto-creativo.svg",
+            "membership": 2,
+            "tagline": "Design, branding, and creative communication."
+        },
+        {
+            "name": "Santa Fe Salud",
+            "address": "25 de Mayo 3120, Santa Fe",
+            "phone": "+54 342 455-4404",
+            "email": "turnos@santafesalud.com",
+            "website": "https://example.com/santa-fe-salud",
+            "image": "santa-fe-salud.svg",
+            "membership": 2,
+            "tagline": "Professional healthcare close to the community."
+        },
+        {
+            "name": "Paraná Logística",
+            "address": "Ruta Nacional 168, Santa Fe",
+            "phone": "+54 342 455-5505",
+            "email": "operaciones@paranalogistica.com",
+            "website": "https://example.com/parana-logistica",
+            "image": "parana-logistica.svg",
+            "membership": 3,
+            "tagline": "Reliable transportation throughout Argentina."
+        },
+        {
+            "name": "Costanera Hotel",
+            "address": "Av. 7 Jefes 4250, Santa Fe",
+            "phone": "+54 342 455-6606",
+            "email": "reservas@costanerahotel.com",
+            "website": "https://example.com/costanera-hotel",
+            "image": "costanera-hotel.svg",
+            "membership": 2,
+            "tagline": "Comfort and hospitality beside the river."
+        },
+        {
+            "name": "Mercado del Sur",
+            "address": "Urquiza 1920, Santa Fe",
+            "phone": "+54 342 455-7707",
+            "email": "info@mercadodelsur.com",
+            "website": "https://example.com/mercado-sur",
+            "image": "mercado-sur.svg",
+            "membership": 1,
+            "tagline": "Local products from Santa Fe entrepreneurs."
+        }
+    ]
+}

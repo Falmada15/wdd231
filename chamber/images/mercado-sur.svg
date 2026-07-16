@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 140">
+    <rect width="180" height="140" rx="18" fill="#f5ead7"></rect>
+    <path d="M43 53h94l-10-25H53z" fill="#d46b3c"></path>
+    <rect x="48" y="53" width="84" height="51" fill="#fff9ef"></rect>
+    <path d="M48 53h84M69 53v51M111 53v51" stroke="#9b4d2e" stroke-width="6"></path>
+    <text x="90" y="126" text-anchor="middle" font-family="Arial" font-weight="700" fill="#7b3d24">MERCADO DEL SUR</text>
+</svg>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Business Directory | Santa Fe Chamber of Commerce</title>
+
+    <meta name="description"
+        content="Explore businesses and organizations that belong to the Santa Fe Chamber of Commerce in Santa Fe, Argentina.">
+    <meta name="author" content="Franco Taiel Almada">
+
+    <meta property="og:title" content="Business Directory | Santa Fe Chamber of Commerce">
+    <meta property="og:description"
+        content="Discover local businesses, services, and organizations that support economic growth in Santa Fe, Argentina.">
+    <meta property="og:image" content="https://falmada15.github.io/wdd231/chamber/images/chamber-logo.svg">
+    <meta property="og:url" content="https://falmada15.github.io/wdd231/chamber/directory.html">
+
+    <link rel="icon" href="images/chamber-logo.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <a class="brand" href="directory.html" aria-label="Santa Fe Chamber of Commerce directory">
+
+            <img src="images/chamber-logo.svg" alt="Santa Fe Chamber of Commerce logo" width="64" height="64">
+
+            <span>
+                Santa Fe Chamber
+                <small>of Commerce</small>
+            </span>
+        </a>
+
+        <button id="menu-button" class="menu-button" type="button" aria-label="Open navigation menu"
+            aria-expanded="false" aria-controls="main-navigation">
+        </button>
+
+    </header>
+
+    <nav id="main-navigation" class="navigation" aria-label="Main navigation">
+
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li class="current">
+                <a href="directory.html">Directory</a>
+            </li>
+
+            <li>
+                <a href="join.html">Join</a>
+            </li>
+
+            <li>
+                <a href="discover.html">Discover</a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <main>
+
+        <div class="page-heading">
+
+            <div>
+                <p class="eyebrow">Support local business</p>
+                <h1>Business Directory</h1>
+
+                <p>
+                    Meet the businesses and organizations helping Santa Fe
+                    grow through innovation, service, employment, and
+                    community collaboration.
+                </p>
+            </div>
+
+            <img src="images/chamber-logo.svg" alt="" width="150" height="150">
+
+        </div>
+
+        <div class="view-controls" aria-label="Directory view controls">
+
+            <button id="grid-view" class="view-button active-view" type="button" aria-pressed="true">
+                Grid View
+            </button>
+
+            <button id="list-view" class="view-button" type="button" aria-pressed="false">
+                List View
+            </button>
+
+        </div>
+
+        <div id="members" class="member-container grid-view" aria-live="polite">
+        </div>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-contact">
+
+            <h2>Santa Fe Chamber of Commerce</h2>
+
+            <address>
+                San Martín 2450<br>
+                Santa Fe, Argentina<br>
+                <a href="mailto:info@santafechamber.org">
+                    info@santafechamber.org
+                </a><br>
+                <a href="tel:+543424560000">
+                    +54 342 456-0000
+                </a>
+            </address>
+
+        </div>
+
+        <div class="footer-social" aria-label="Social media links">
+
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+                aria-label="Santa Fe Chamber on Facebook">
+                f
+            </a>
+
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+                aria-label="Santa Fe Chamber on Instagram">
+                ig
+            </a>
+
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
+                aria-label="Santa Fe Chamber on LinkedIn">
+                in
+            </a>
+
+        </div>
+
+        <div class="footer-development">
+
+            <p>WDD 231 Class Project</p>
+            <p>Franco Taiel Almada</p>
+
+            <p>
+                &copy; <span id="current-year"></span>
+                Santa Fe Chamber of Commerce
+            </p>
+
+            <p id="last-modified"></p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

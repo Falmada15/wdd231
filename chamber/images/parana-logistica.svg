@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 140">
+    <rect width="180" height="140" rx="18" fill="#e4ecf5"></rect>
+    <rect x="32" y="48" width="75" height="42" rx="5" fill="#123b5d"></rect>
+    <path d="M107 58h24l17 18v14h-41z" fill="#e5a900"></path>
+    <circle cx="57" cy="96" r="11" fill="#263238"></circle>
+    <circle cx="127" cy="96" r="11" fill="#263238"></circle>
+    <text x="90" y="125" text-anchor="middle" font-family="Arial" font-weight="700" fill="#123b5d">PARANÁ LOGÍSTICA</text>
+</svg>

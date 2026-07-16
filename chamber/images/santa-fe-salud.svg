@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 140">
+    <rect width="180" height="140" rx="18" fill="#e0f3e8"></rect>
+    <circle cx="90" cy="62" r="42" fill="#2f855a"></circle>
+    <rect x="82" y="35" width="16" height="54" rx="4" fill="#ffffff"></rect>
+    <rect x="63" y="54" width="54" height="16" rx="4" fill="#ffffff"></rect>
+    <text x="90" y="124" text-anchor="middle" font-family="Arial" font-weight="700" fill="#1f5b3e">SANTA FE SALUD</text>
+</svg>
