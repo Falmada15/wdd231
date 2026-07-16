@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JavaScript Modules | WDD 231</title>
+
+    <meta name="description"
+        content="A JavaScript ES Modules learning activity for managing course section enrollment.">
+    <meta name="author" content="Franco Taiel Almada">
+
+    <link rel="stylesheet" href="styles/modules.css">
+
+    <script type="module" src="scripts/modules.mjs"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Course Enrollment</h1>
+    </header>
+
+    <main>
+
+        <section class="course-information">
+            <h2 id="courseName"></h2>
+            <p id="courseCode"></p>
+        </section>
+
+        <section class="enrollment-controls">
+            <h2>Manage Enrollment</h2>
+
+            <label for="sectionNumber">
+                Select a Section
+            </label>
+
+            <select id="sectionNumber"></select>
+
+            <div class="button-group">
+                <button id="enrollStudent" type="button">
+                    Enroll Student
+                </button>
+
+                <button id="dropStudent" type="button">
+                    Drop Student
+                </button>
+            </div>
+
+            <p id="statusMessage" aria-live="polite"></p>
+        </section>
+
+        <section class="sections-area">
+            <h2>Available Sections</h2>
+
+            <div id="sections"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Franco Taiel Almada | WDD 231</p>
+    </footer>
+
+</body>
+
+</html>
