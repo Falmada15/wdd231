@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Santa Fe Chamber of Commerce | Home</title>
+
+    <meta name="description"
+        content="The Santa Fe Chamber of Commerce supports local businesses, promotes economic development, and connects entrepreneurs throughout Santa Fe, Argentina.">
+    <meta name="author" content="Franco Taiel Almada">
+
+    <meta property="og:title" content="Santa Fe Chamber of Commerce">
+    <meta property="og:description"
+        content="Discover local events, business opportunities, weather information, and featured members of the Santa Fe Chamber of Commerce.">
+    <meta property="og:image" content="https://falmada15.github.io/wdd231/chamber/images/santa-fe-hero.svg">
+    <meta property="og:url" content="https://falmada15.github.io/wdd231/chamber/index.html">
+
+    <link rel="icon" href="images/chamber-logo.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/home.js" defer></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <a class="brand" href="index.html" aria-label="Santa Fe Chamber of Commerce home">
+
+            <img src="images/chamber-logo.svg" alt="Santa Fe Chamber of Commerce logo" width="64" height="64">
+
+            <span>
+                Santa Fe Chamber
+                <small>of Commerce</small>
+            </span>
+        </a>
+
+        <button id="menu-button" class="menu-button" type="button" aria-label="Open navigation menu"
+            aria-expanded="false" aria-controls="main-navigation">
+        </button>
+
+    </header>
+
+    <nav id="main-navigation" class="navigation" aria-label="Main navigation">
+
+        <ul>
+            <li class="current">
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="directory.html">Directory</a>
+            </li>
+
+            <li>
+                <a href="join.html">Join</a>
+            </li>
+
+            <li>
+                <a href="discover.html">Discover</a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <main class="home-main">
+
+        <section class="hero">
+
+            <img src="images/santa-fe-hero.svg"
+                alt="Illustration of Santa Fe, Argentina, with its river, bridge, and business district" width="1600"
+                height="700">
+
+            <div class="hero-overlay">
+
+                <p class="hero-eyebrow">
+                    Connecting business and community
+                </p>
+
+                <h1>Grow Together in Santa Fe</h1>
+
+                <p>
+                    Build meaningful connections, discover local opportunities,
+                    and become part of a stronger business community.
+                </p>
+
+                <a class="hero-cta" href="join.html">
+                    Join the Chamber
+                </a>
+
+            </div>
+
+        </section>
+
+        <div class="home-information-grid">
+
+            <section class="events-section">
+
+                <h2>Current Events</h2>
+
+                <article class="event-card">
+                    <p class="event-date">August 8</p>
+
+                    <div>
+                        <h3>Business Networking Breakfast</h3>
+
+                        <p>
+                            Meet local entrepreneurs and business leaders while
+                            discovering new partnership opportunities.
+                        </p>
+
+                        <p>
+                            <strong>Location:</strong>
+                            Santa Fe Convention Center
+                        </p>
+                    </div>
+                </article>
+
+                <article class="event-card">
+                    <p class="event-date">August 15</p>
+
+                    <div>
+                        <h3>Digital Growth Workshop</h3>
+
+                        <p>
+                            Learn practical strategies for improving your
+                            company's online presence and customer experience.
+                        </p>
+
+                        <p>
+                            <strong>Location:</strong>
+                            Chamber Training Room
+                        </p>
+                    </div>
+                </article>
+
+            </section>
+
+            <section class="weather-section">
+
+                <h2>Santa Fe Weather</h2>
+
+                <div class="current-weather">
+
+                    <img id="weather-icon" src="images/chamber-logo.svg" alt="" width="100" height="100">
+
+                    <div>
+                        <p id="current-temperature" class="current-temperature">
+                            Loading...
+                        </p>
+
+                        <p id="weather-description">
+                            Weather information
+                        </p>
+                    </div>
+
+                </div>
+
+                <h3>Three-Day Forecast</h3>
+
+                <div id="forecast" class="forecast" aria-live="polite">
+                </div>
+
+                <p id="weather-error" class="weather-error" aria-live="polite">
+                </p>
+
+            </section>
+
+        </div>
+
+        <section class="spotlights-section">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="eyebrow">Featured members</p>
+                    <h2>Company Spotlights</h2>
+                </div>
+
+                <a href="directory.html">
+                    View full directory
+                </a>
+
+            </div>
+
+            <div id="spotlights" class="spotlight-grid" aria-live="polite">
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-contact">
+
+            <h2>Santa Fe Chamber of Commerce</h2>
+
+            <address>
+                San Martín 2450<br>
+                Santa Fe, Argentina<br>
+
+                <a href="mailto:info@santafechamber.org">
+                    info@santafechamber.org
+                </a><br>
+
+                <a href="tel:+543424560000">
+                    +54 342 456-0000
+                </a>
+            </address>
+
+        </div>
+
+        <div class="footer-social">
+
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+                aria-label="Santa Fe Chamber on Facebook">
+                f
+            </a>
+
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+                aria-label="Santa Fe Chamber on Instagram">
+                ig
+            </a>
+
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
+                aria-label="Santa Fe Chamber on LinkedIn">
+                in
+            </a>
+
+        </div>
+
+        <div class="footer-development">
+
+            <p>WDD 231 Class Project</p>
+            <p>Franco Taiel Almada</p>
+
+            <p>
+                &copy; <span id="current-year"></span>
+                Santa Fe Chamber of Commerce
+            </p>
+
+            <p id="last-modified"></p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

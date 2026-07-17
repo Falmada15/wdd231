@@ -96,3 +96,33 @@
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 }
+
+@media screen and (min-width: 760px) {
+
+    .hero {
+        min-height: 560px;
+    }
+
+    .hero>img {
+        min-height: 560px;
+    }
+
+    .hero-overlay {
+        left: max(2rem, calc((100% - 1180px) / 2));
+    }
+
+    .home-information-grid {
+        grid-template-columns: 1.45fr 1fr;
+        align-items: stretch;
+    }
+
+    .section-heading {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .spotlight-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
