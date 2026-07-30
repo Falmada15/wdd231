@@ -126,3 +126,27 @@
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 }
+
+/* ===========================
+   JOIN PAGE
+=========================== */
+
+@media screen and (min-width: 768px) {
+
+    .join-layout {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+        align-items: start;
+    }
+
+    .membership-cards {
+        position: sticky;
+        top: 1rem;
+    }
+
+    .membership-modal {
+        max-width: 600px;
+    }
+
+}

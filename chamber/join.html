@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Join the Chamber | Santa Fe Chamber of Commerce</title>
+
+    <meta name="description"
+        content="Join the Santa Fe Chamber of Commerce and discover membership opportunities for businesses and nonprofit organizations in Santa Fe, Argentina.">
+    <meta name="author" content="Franco Taiel Almada">
+
+    <meta property="og:title" content="Join the Santa Fe Chamber of Commerce">
+    <meta property="og:description"
+        content="Explore membership levels and become part of the Santa Fe business community.">
+    <meta property="og:image" content="https://falmada15.github.io/wdd231/chamber/images/chamber-logo.svg">
+    <meta property="og:url" content="https://falmada15.github.io/wdd231/chamber/join.html">
+
+    <link rel="icon" href="images/chamber-logo.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <a class="brand" href="index.html" aria-label="Santa Fe Chamber of Commerce home">
+
+            <img src="images/chamber-logo.svg" alt="Santa Fe Chamber of Commerce logo" width="64" height="64">
+
+            <span>
+                Santa Fe Chamber
+                <small>of Commerce</small>
+            </span>
+
+        </a>
+
+        <button id="menu-button" class="menu-button" type="button" aria-label="Open navigation menu"
+            aria-expanded="false" aria-controls="main-navigation">
+        </button>
+
+    </header>
+
+    <nav id="main-navigation" class="navigation" aria-label="Main navigation">
+
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="directory.html">Directory</a>
+            </li>
+
+            <li class="current">
+                <a href="join.html">Join</a>
+            </li>
+
+            <li>
+                <a href="discover.html">Discover</a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <main class="join-main">
+
+        <div class="page-heading">
+
+            <div>
+                <p class="eyebrow">Become a member</p>
+
+                <h1>Join the Chamber</h1>
+
+                <p>
+                    Connect with local businesses, discover new opportunities,
+                    and contribute to the economic growth of Santa Fe.
+                </p>
+            </div>
+
+            <img src="images/chamber-logo.svg" alt="" width="150" height="150">
+
+        </div>
+
+        <div class="join-layout">
+
+            <section class="application-section">
+
+                <h2>Membership Application</h2>
+
+                <p>
+                    Complete the following form to apply for membership in the
+                    Santa Fe Chamber of Commerce.
+                </p>
+
+                <form method="get" action="thankyou.html" class="membership-form">
+
+                    <label>
+                        First Name
+                        <input type="text" name="first" title="Enter your first name" autocomplete="given-name"
+                            required>
+                    </label>
+
+                    <label>
+                        Last Name
+                        <input type="text" name="last" title="Enter your last name" autocomplete="family-name" required>
+                    </label>
+
+                    <label>
+                        Organizational Title
+                        <input type="text" name="organizationalTitle"
+                            title="Enter your organizational title using at least seven letters, hyphens, or spaces"
+                            autocomplete="organization-title" pattern="[A-Za-zÀ-ÿ -]{7,}">
+                    </label>
+
+                    <label>
+                        Email Address
+                        <input type="email" name="email" title="Enter your email address" autocomplete="email"
+                            placeholder="example@email.com" required>
+                    </label>
+
+                    <label>
+                        Mobile Phone Number
+                        <input type="tel" name="phone" title="Enter your mobile phone number" autocomplete="tel"
+                            required>
+                    </label>
+
+                    <label>
+                        Business or Organization Name
+                        <input type="text" name="organization" title="Enter the name of your business or organization"
+                            autocomplete="organization" required>
+                    </label>
+
+                    <label>
+                        Membership Level
+                        <select name="membership" title="Select a membership level" required>
+
+                            <option value="" disabled selected>
+                                Select a membership level
+                            </option>
+
+                            <option value="NP Membership">
+                                NP Membership
+                            </option>
+
+                            <option value="Bronze Membership">
+                                Bronze Membership
+                            </option>
+
+                            <option value="Silver Membership">
+                                Silver Membership
+                            </option>
+
+                            <option value="Gold Membership">
+                                Gold Membership
+                            </option>
+
+                        </select>
+                    </label>
+
+                    <label>
+                        Business or Organization Description
+                        <textarea name="description" title="Describe your business or organization" rows="6"></textarea>
+                    </label>
+
+                    <input type="hidden" id="timestamp" name="timestamp">
+
+                    <button type="submit" class="submit-membership">
+                        Submit Application
+                    </button>
+
+                </form>
+
+            </section>
+
+            <section class="membership-section">
+
+                <h2>Membership Levels</h2>
+
+                <div class="membership-cards">
+
+                    <article class="membership-card">
+
+                        <h3>NP Membership</h3>
+
+                        <p>
+                            Designed for nonprofit organizations serving the
+                            Santa Fe community.
+                        </p>
+
+                        <button type="button" class="membership-details" data-modal="np-modal">
+                            View Benefits
+                        </button>
+
+                    </article>
+
+                    <article class="membership-card">
+
+                        <h3>Bronze Membership</h3>
+
+                        <p>
+                            An accessible option for small businesses and
+                            entrepreneurs beginning to grow.
+                        </p>
+
+                        <button type="button" class="membership-details" data-modal="bronze-modal">
+                            View Benefits
+                        </button>
+
+                    </article>
+
+                    <article class="membership-card">
+
+                        <h3>Silver Membership</h3>
+
+                        <p>
+                            Additional promotion and networking opportunities
+                            for growing businesses.
+                        </p>
+
+                        <button type="button" class="membership-details" data-modal="silver-modal">
+                            View Benefits
+                        </button>
+
+                    </article>
+
+                    <article class="membership-card">
+
+                        <h3>Gold Membership</h3>
+
+                        <p>
+                            Premium visibility, exclusive benefits, and greater
+                            involvement in Chamber initiatives.
+                        </p>
+
+                        <button type="button" class="membership-details" data-modal="gold-modal">
+                            View Benefits
+                        </button>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+        </div>
+
+        <dialog id="np-modal" class="membership-modal">
+
+            <button type="button" class="close-modal" aria-label="Close NP Membership information">
+                ×
+            </button>
+
+            <h2>NP Membership</h2>
+
+            <p>
+                This no-cost membership level is available to qualifying
+                nonprofit organizations.
+            </p>
+
+            <h3>Benefits</h3>
+
+            <ul>
+                <li>Access to Chamber networking events</li>
+                <li>Organization listing in the business directory</li>
+                <li>Community partnership opportunities</li>
+                <li>Access to educational workshops</li>
+            </ul>
+
+        </dialog>
+
+        <dialog id="bronze-modal" class="membership-modal">
+
+            <button type="button" class="close-modal" aria-label="Close Bronze Membership information">
+                ×
+            </button>
+
+            <h2>Bronze Membership</h2>
+
+            <p>
+                A basic membership designed for entrepreneurs and small
+                businesses.
+            </p>
+
+            <h3>Benefits</h3>
+
+            <ul>
+                <li>Business directory listing</li>
+                <li>Access to networking events</li>
+                <li>Member training opportunities</li>
+                <li>Chamber news and business resources</li>
+            </ul>
+
+        </dialog>
+
+        <dialog id="silver-modal" class="membership-modal">
+
+            <button type="button" class="close-modal" aria-label="Close Silver Membership information">
+                ×
+            </button>
+
+            <h2>Silver Membership</h2>
+
+            <p>
+                A membership level offering increased exposure and
+                professional development opportunities.
+            </p>
+
+            <h3>Benefits</h3>
+
+            <ul>
+                <li>All Bronze Membership benefits</li>
+                <li>Priority registration for Chamber events</li>
+                <li>Additional business directory promotion</li>
+                <li>Discounts on selected events and workshops</li>
+            </ul>
+
+        </dialog>
+
+        <dialog id="gold-modal" class="membership-modal">
+
+            <button type="button" class="close-modal" aria-label="Close Gold Membership information">
+                ×
+            </button>
+
+            <h2>Gold Membership</h2>
+
+            <p>
+                Our premium membership level provides maximum visibility and
+                participation within the Chamber.
+            </p>
+
+            <h3>Benefits</h3>
+
+            <ul>
+                <li>All Silver Membership benefits</li>
+                <li>Featured placement in Chamber promotions</li>
+                <li>Exclusive invitations to leadership events</li>
+                <li>Premium sponsorship and advertising opportunities</li>
+                <li>Priority support from Chamber representatives</li>
+            </ul>
+
+        </dialog>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-contact">
+
+            <h2>Santa Fe Chamber of Commerce</h2>
+
+            <address>
+                San Martín 2450<br>
+                Santa Fe, Argentina<br>
+
+                <a href="mailto:info@santafechamber.org">
+                    info@santafechamber.org
+                </a><br>
+
+                <a href="tel:+543424560000">
+                    +54 342 456-0000
+                </a>
+            </address>
+
+        </div>
+
+        <div class="footer-social">
+
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+                aria-label="Santa Fe Chamber on Facebook">
+                f
+            </a>
+
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+                aria-label="Santa Fe Chamber on Instagram">
+                ig
+            </a>
+
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
+                aria-label="Santa Fe Chamber on LinkedIn">
+                in
+            </a>
+
+        </div>
+
+        <div class="footer-development">
+
+            <p>WDD 231 Class Project</p>
+            <p>Franco Taiel Almada</p>
+
+            <p>
+                &copy; <span id="current-year"></span>
+                Santa Fe Chamber of Commerce
+            </p>
+
+            <p id="last-modified"></p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

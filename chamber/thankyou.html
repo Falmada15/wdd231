@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Thank You | Santa Fe Chamber of Commerce</title>
+
+    <meta name="description"
+        content="Thank you for submitting your membership application to the Santa Fe Chamber of Commerce.">
+    <meta name="author" content="Franco Taiel Almada">
+
+    <meta property="og:title" content="Thank You | Santa Fe Chamber of Commerce">
+    <meta property="og:description" content="Your Chamber membership application has been submitted successfully.">
+    <meta property="og:image" content="https://falmada15.github.io/wdd231/chamber/images/chamber-logo.svg">
+    <meta property="og:url" content="https://falmada15.github.io/wdd231/chamber/thankyou.html">
+
+    <link rel="icon" href="images/chamber-logo.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/thankyou.js" defer></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <a class="brand" href="index.html" aria-label="Santa Fe Chamber of Commerce home">
+
+            <img src="images/chamber-logo.svg" alt="Santa Fe Chamber of Commerce logo" width="64" height="64">
+
+            <span>
+                Santa Fe Chamber
+                <small>of Commerce</small>
+            </span>
+
+        </a>
+
+        <button id="menu-button" class="menu-button" type="button" aria-label="Open navigation menu"
+            aria-expanded="false" aria-controls="main-navigation">
+        </button>
+
+    </header>
+
+    <nav id="main-navigation" class="navigation" aria-label="Main navigation">
+
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="directory.html">Directory</a>
+            </li>
+
+            <li>
+                <a href="join.html">Join</a>
+            </li>
+
+            <li>
+                <a href="discover.html">Discover</a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <main class="thankyou-main">
+
+        <section class="thankyou-section">
+
+            <h1>Thank You!</h1>
+
+            <p>
+                Your membership application has been submitted successfully.
+            </p>
+
+            <p>
+                Here is the information you provided:
+            </p>
+
+            <div id="application-summary"></div>
+
+            <a class="submit-membership" href="index.html">
+                Return to Home
+            </a>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-contact">
+
+            <h2>Santa Fe Chamber of Commerce</h2>
+
+            <address>
+                San Martín 2450<br>
+                Santa Fe, Argentina<br>
+
+                <a href="mailto:info@santafechamber.org">
+                    info@santafechamber.org
+                </a><br>
+
+                <a href="tel:+543424560000">
+                    +54 342 456-0000
+                </a>
+            </address>
+
+        </div>
+
+        <div class="footer-social">
+
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+                aria-label="Santa Fe Chamber on Facebook">
+                f
+            </a>
+
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+                aria-label="Santa Fe Chamber on Instagram">
+                ig
+            </a>
+
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
+                aria-label="Santa Fe Chamber on LinkedIn">
+                in
+            </a>
+
+        </div>
+
+        <div class="footer-development">
+
+            <p>WDD 231 Class Project</p>
+            <p>Franco Taiel Almada</p>
+
+            <p>
+                &copy; <span id="current-year"></span>
+                Santa Fe Chamber of Commerce
+            </p>
+
+            <p id="last-modified"></p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
