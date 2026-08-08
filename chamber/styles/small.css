@@ -831,3 +831,144 @@ footer a {
         transform: translateY(0);
     }
 }
+
+/* ===========================
+   DISCOVER PAGE
+=========================== */
+
+.discover-main {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.visitor-message {
+    margin: 1rem 0 1.5rem;
+    padding: 1rem;
+    background-color: var(--card-color);
+    border-left: 5px solid var(--accent-color);
+    border-radius: 6px;
+    box-shadow: var(--shadow);
+    font-weight: 600;
+}
+
+.discover-section {
+    margin: 2rem 0;
+}
+
+.discover-section>h2 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+/* Small view: 320px - 640px */
+
+.discover-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+    gap: 1.25rem;
+}
+
+.discover-card:nth-child(1) {
+    grid-area: card1;
+}
+
+.discover-card:nth-child(2) {
+    grid-area: card2;
+}
+
+.discover-card:nth-child(3) {
+    grid-area: card3;
+}
+
+.discover-card:nth-child(4) {
+    grid-area: card4;
+}
+
+.discover-card:nth-child(5) {
+    grid-area: card5;
+}
+
+.discover-card:nth-child(6) {
+    grid-area: card6;
+}
+
+.discover-card:nth-child(7) {
+    grid-area: card7;
+}
+
+.discover-card:nth-child(8) {
+    grid-area: card8;
+}
+
+.discover-card {
+    display: grid;
+    grid-template-areas:
+        "title"
+        "image"
+        "address"
+        "description"
+        "button";
+    background-color: var(--card-color);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.discover-card h2 {
+    grid-area: title;
+    margin: 0;
+    padding: 1rem;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.discover-card figure {
+    grid-area: image;
+    margin: 0;
+}
+
+.discover-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+}
+
+.discover-card address {
+    grid-area: address;
+    padding: 1rem 1rem 0;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.discover-card p {
+    grid-area: description;
+    padding: 1rem;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.discover-card button {
+    grid-area: button;
+    margin: 0 1rem 1rem;
+    padding: .75rem 1rem;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--primary-color);
+    color: #fff;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
