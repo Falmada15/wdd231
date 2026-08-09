@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Services | LDE Phone Repair & Accessories</title>
+
+    <meta name="description"
+        content="Explore phone repair services, technical solutions, and mobile accessories available from LDE in Santa Fe, Argentina.">
+
+    <meta name="author" content="Franco Taiel Almada">
+
+    <meta property="og:title" content="Services | LDE Phone Repair & Accessories">
+
+    <meta property="og:description"
+        content="Explore repair services and mobile accessories available from LDE in Santa Fe, Argentina.">
+
+    <meta property="og:image" content="https://falmada15.github.io/wdd231/final/images/lde-logo.webp">
+
+    <meta property="og:url" content="https://falmada15.github.io/wdd231/final/services.html">
+
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="images/favicon.png" type="image/png">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script type="module" src="scripts/services.js"></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <a class="brand" href="index.html" aria-label="LDE home">
+
+            <img src="images/lde-logo.webp" alt="LDE Llamado de Emergencia logo" width="70" height="70">
+
+            <span>
+                <strong>LDE</strong>
+                <small>Llamado de Emergencia</small>
+            </span>
+
+        </a>
+
+        <button id="menu-button" class="menu-button" type="button" aria-label="Open navigation menu"
+            aria-expanded="false" aria-controls="main-navigation">
+            ☰
+        </button>
+
+        <nav id="main-navigation" class="navigation" aria-label="Main navigation">
+
+            <ul>
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a class="active" href="services.html" aria-current="page">
+                        Services
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="services-heading">
+
+            <div>
+
+                <p class="eyebrow">
+                    Technical Solutions
+                </p>
+
+                <h1>Services & Accessories</h1>
+
+                <p>
+                    Explore our repair services and mobile
+                    accessories. Select a category or view
+                    the details of each option to learn more.
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="services-section">
+
+            <div class="service-filters" aria-label="Filter services">
+
+                <button class="filter-button active-filter" type="button" data-filter="all">
+                    All
+                </button>
+
+                <button class="filter-button" type="button" data-filter="repair">
+                    Repairs
+                </button>
+
+                <button class="filter-button" type="button" data-filter="software">
+                    Software
+                </button>
+
+                <button class="filter-button" type="button" data-filter="accessory">
+                    Accessories
+                </button>
+
+            </div>
+
+            <p id="service-count" class="service-count" aria-live="polite">
+            </p>
+
+            <div id="services-grid" class="services-grid">
+            </div>
+
+            <p id="services-error" class="services-error" hidden>
+            </p>
+
+        </section>
+
+    </main>
+
+    <dialog id="service-modal" class="service-modal">
+
+        <button id="close-modal" class="close-modal" type="button" aria-label="Close service details">
+            ×
+        </button>
+
+        <div id="modal-content">
+        </div>
+
+    </dialog>
+
+    <footer>
+
+        <div class="footer-brand">
+
+            <img src="images/lde-logo.webp" alt="" width="60" height="60" loading="lazy">
+
+            <div>
+                <strong>LDE</strong>
+
+                <p>
+                    Phone repair and accessories.
+                </p>
+            </div>
+
+        </div>
+
+        <nav class="footer-navigation" aria-label="Footer navigation">
+
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="attributions.html">Attributions</a>
+
+        </nav>
+
+        <div class="footer-course">
+
+            <p>
+                WDD 231 Final Project
+            </p>
+
+            <p>
+                &copy;
+                <span id="current-year"></span>
+                Franco Taiel Almada
+            </p>
+
+            <p id="last-modified"></p>
+
+            <!-- Final project video link will be added here. -->
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

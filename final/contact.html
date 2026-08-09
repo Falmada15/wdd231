@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Contact | LDE Phone Repair & Accessories</title>
+
+    <meta name="description"
+        content="Contact LDE in Santa Fe to request mobile phone technical service, diagnostics, repairs, or information about accessories.">
+
+    <meta name="author" content="Franco Taiel Almada">
+
+    <meta property="og:title" content="Contact | LDE Phone Repair & Accessories">
+
+    <meta property="og:description"
+        content="Request technical service or contact LDE for mobile phone repairs and accessories in Santa Fe, Argentina.">
+
+    <meta property="og:image" content="https://falmada15.github.io/wdd231/final/images/lde-logo.webp">
+
+    <meta property="og:url" content="https://falmada15.github.io/wdd231/final/contact.html">
+
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="images/favicon.png" type="image/png">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script type="module" src="scripts/contact.js"></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <a class="brand" href="index.html" aria-label="LDE home">
+
+            <img src="images/lde-logo.webp" alt="LDE Llamado de Emergencia logo" width="70" height="70">
+
+            <span>
+                <strong>LDE</strong>
+                <small>Llamado de Emergencia</small>
+            </span>
+
+        </a>
+
+        <button id="menu-button" class="menu-button" type="button" aria-label="Open navigation menu"
+            aria-expanded="false" aria-controls="main-navigation">
+            ☰
+        </button>
+
+        <nav id="main-navigation" class="navigation" aria-label="Main navigation">
+
+            <ul>
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="services.html">
+                        Services
+                    </a>
+                </li>
+
+                <li>
+                    <a class="active" href="contact.html" aria-current="page">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="contact-heading">
+
+            <div>
+
+                <p class="eyebrow">
+                    Contact LDE
+                </p>
+
+                <h1>
+                    Tell us what happened.
+                </h1>
+
+                <p>
+                    Complete the form with information about your
+                    device and the problem you are experiencing.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="contact-section">
+
+            <div class="contact-information">
+
+                <p class="eyebrow">
+                    Technical Service
+                </p>
+
+                <h2>
+                    Start your repair request.
+                </h2>
+
+                <p>
+                    Give us a few details about your device.
+                    This information helps us understand the
+                    problem before evaluating the phone.
+                </p>
+
+                <div class="contact-points">
+
+                    <div>
+                        <span>01</span>
+
+                        <div>
+                            <strong>Describe the problem</strong>
+
+                            <p>
+                                Tell us what the device is doing
+                                or what stopped working.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span>02</span>
+
+                        <div>
+                            <strong>Identify your device</strong>
+
+                            <p>
+                                Include the brand and model whenever
+                                possible.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span>03</span>
+
+                        <div>
+                            <strong>Request an evaluation</strong>
+
+                            <p>
+                                The device can then be evaluated
+                                to determine the appropriate solution.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-container">
+
+                <form class="contact-form" method="get" action="thankyou.html">
+
+                    <fieldset>
+
+                        <legend>
+                            Contact Information
+                        </legend>
+
+                        <label>
+                            First Name
+                            <input type="text" name="firstName" autocomplete="given-name" required>
+                        </label>
+
+                        <label>
+                            Last Name
+                            <input type="text" name="lastName" autocomplete="family-name" required>
+                        </label>
+
+                        <label>
+                            Email
+                            <input type="email" name="email" autocomplete="email" placeholder="name@example.com"
+                                required>
+                        </label>
+
+                        <label>
+                            Phone
+                            <input type="tel" name="phone" autocomplete="tel" required>
+                        </label>
+
+                    </fieldset>
+
+
+                    <fieldset>
+
+                        <legend>
+                            Device Information
+                        </legend>
+
+                        <label>
+                            Device Brand
+                            <select name="brand" required>
+
+                                <option value="">
+                                    Select a brand
+                                </option>
+
+                                <option value="Samsung">
+                                    Samsung
+                                </option>
+
+                                <option value="Motorola">
+                                    Motorola
+                                </option>
+
+                                <option value="Apple">
+                                    Apple
+                                </option>
+
+                                <option value="Xiaomi">
+                                    Xiaomi
+                                </option>
+
+                                <option value="Other">
+                                    Other
+                                </option>
+
+                            </select>
+                        </label>
+
+                        <label>
+                            Device Model
+                            <input type="text" name="model" placeholder="Example: Galaxy A15" required>
+                        </label>
+
+                        <label>
+                            Type of Service
+
+                            <select name="service" required>
+
+                                <option value="">
+                                    Select a service
+                                </option>
+
+                                <option value="Screen Repair">
+                                    Screen Repair
+                                </option>
+
+                                <option value="Battery">
+                                    Battery
+                                </option>
+
+                                <option value="Charging">
+                                    Charging Problem
+                                </option>
+
+                                <option value="Software">
+                                    Software Problem
+                                </option>
+
+                                <option value="Diagnostics">
+                                    Diagnostics
+                                </option>
+
+                                <option value="Other">
+                                    Other
+                                </option>
+
+                            </select>
+                        </label>
+
+                        <label>
+                            Describe the Problem
+
+                            <textarea name="problem" rows="6" minlength="10" required
+                                placeholder="Tell us what is happening with your device."></textarea>
+                        </label>
+
+                    </fieldset>
+
+                    <input type="hidden" id="timestamp" name="timestamp">
+
+                    <button class="form-submit" type="submit">
+                        Send Repair Request
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-brand">
+
+            <img src="images/lde-logo.webp" alt="" width="60" height="60" loading="lazy">
+
+            <div>
+                <strong>LDE</strong>
+
+                <p>
+                    Phone repair and accessories.
+                </p>
+            </div>
+
+        </div>
+
+        <nav class="footer-navigation" aria-label="Footer navigation">
+
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="attributions.html">Attributions</a>
+
+        </nav>
+
+        <div class="footer-course">
+
+            <p>
+                WDD 231 Final Project
+            </p>
+
+            <p>
+                &copy;
+                <span id="current-year"></span>
+                Franco Taiel Almada
+            </p>
+
+            <p id="last-modified"></p>
+
+            <!-- Final project video link will be added here. -->
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Request Received | LDE Phone Repair & Accessories</title>
+
+    <meta name="description"
+        content="Confirmation of a technical service request submitted to LDE in Santa Fe, Argentina.">
+
+    <meta name="author" content="Franco Taiel Almada">
+
+    <meta property="og:title" content="Request Received | LDE Phone Repair & Accessories">
+
+    <meta property="og:description" content="Technical service request confirmation for LDE in Santa Fe, Argentina.">
+
+    <meta property="og:image" content="https://falmada15.github.io/wdd231/final/images/lde-logo.webp">
+
+    <meta property="og:url" content="https://falmada15.github.io/wdd231/final/thankyou.html">
+
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="images/favicon.png" type="image/png">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script type="module" src="scripts/thankyou.js"></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <a class="brand" href="index.html" aria-label="LDE home">
+
+            <img src="images/lde-logo.webp" alt="LDE Llamado de Emergencia logo" width="70" height="70">
+
+            <span>
+                <strong>LDE</strong>
+                <small>Llamado de Emergencia</small>
+            </span>
+
+        </a>
+
+        <button id="menu-button" class="menu-button" type="button" aria-label="Open navigation menu"
+            aria-expanded="false" aria-controls="main-navigation">
+            ☰
+        </button>
+
+        <nav id="main-navigation" class="navigation" aria-label="Main navigation">
+
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="services.html">Services</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="thankyou-section">
+
+            <div class="thankyou-card">
+
+                <p class="eyebrow">
+                    Request Received
+                </p>
+
+                <h1>
+                    Thank you,
+                    <span id="customer-name"></span>.
+                </h1>
+
+                <p class="thankyou-intro">
+                    Your technical service request has been
+                    received. Here is the information you submitted:
+                </p>
+
+
+                <div class="submitted-information">
+
+                    <div>
+                        <span>Email</span>
+                        <strong id="submitted-email"></strong>
+                    </div>
+
+                    <div>
+                        <span>Phone</span>
+                        <strong id="submitted-phone"></strong>
+                    </div>
+
+                    <div>
+                        <span>Device</span>
+                        <strong id="submitted-device"></strong>
+                    </div>
+
+                    <div>
+                        <span>Requested Service</span>
+                        <strong id="submitted-service"></strong>
+                    </div>
+
+                    <div class="submitted-problem">
+                        <span>Problem Description</span>
+                        <p id="submitted-problem"></p>
+                    </div>
+
+                </div>
+
+
+                <div class="thankyou-actions">
+
+                    <a class="button button-dark" href="index.html">
+                        Return Home
+                    </a>
+
+                    <a class="text-link" href="services.html">
+                        Explore Services →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-brand">
+
+            <img src="images/lde-logo.webp" alt="" width="60" height="60" loading="lazy">
+
+            <div>
+                <strong>LDE</strong>
+
+                <p>
+                    Phone repair and accessories.
+                </p>
+            </div>
+
+        </div>
+
+        <nav class="footer-navigation" aria-label="Footer navigation">
+
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="attributions.html">Attributions</a>
+
+        </nav>
+
+        <div class="footer-course">
+
+            <p>WDD 231 Final Project</p>
+
+            <p>
+                &copy;
+                <span id="current-year"></span>
+                Franco Taiel Almada
+            </p>
+
+            <p id="last-modified"></p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
