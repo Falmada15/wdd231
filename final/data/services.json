@@ -1,0 +1,130 @@
+[
+    {
+        "id": 1,
+        "name": "Screen Replacement",
+        "category": "repair",
+        "description": "Replacement of broken, cracked, or malfunctioning phone screens.",
+        "details": "The damaged display is removed and replaced with a compatible screen. The device is tested after installation.",
+        "availability": "Depends on device model"
+    },
+    {
+        "id": 2,
+        "name": "Battery Replacement",
+        "category": "repair",
+        "description": "Replacement for batteries with poor performance or charging problems.",
+        "details": "Battery condition is evaluated before replacement and the device is tested after the new battery is installed.",
+        "availability": "Depends on device model"
+    },
+    {
+        "id": 3,
+        "name": "Charging Port Repair",
+        "category": "repair",
+        "description": "Diagnosis and repair of phones that do not charge correctly.",
+        "details": "The charging connector and related components are inspected to determine whether cleaning, repair, or replacement is required.",
+        "availability": "Technical evaluation required"
+    },
+    {
+        "id": 4,
+        "name": "Speaker Repair",
+        "category": "repair",
+        "description": "Solutions for low, distorted, or missing sound from the phone speaker.",
+        "details": "The speaker and related components are inspected and tested to identify the cause of the audio problem.",
+        "availability": "Technical evaluation required"
+    },
+    {
+        "id": 5,
+        "name": "Microphone Repair",
+        "category": "repair",
+        "description": "Repair for devices with poor or missing microphone audio.",
+        "details": "Microphones and related components are tested to diagnose problems affecting calls, recordings, or voice messages.",
+        "availability": "Technical evaluation required"
+    },
+    {
+        "id": 6,
+        "name": "Camera Repair",
+        "category": "repair",
+        "description": "Diagnosis and replacement of malfunctioning front or rear cameras.",
+        "details": "Camera modules and their connections are inspected when the camera does not focus, open, or produce a clear image.",
+        "availability": "Depends on device model"
+    },
+    {
+        "id": 7,
+        "name": "Device Diagnostics",
+        "category": "repair",
+        "description": "General inspection to identify hardware problems and possible repair options.",
+        "details": "The device is evaluated to identify the source of a problem before a repair procedure is recommended.",
+        "availability": "Available"
+    },
+    {
+        "id": 8,
+        "name": "Software Troubleshooting",
+        "category": "software",
+        "description": "Diagnosis of software errors, crashes, and general system problems.",
+        "details": "Software-related issues are evaluated to determine possible solutions without unnecessarily replacing hardware.",
+        "availability": "Available"
+    },
+    {
+        "id": 9,
+        "name": "System Update Assistance",
+        "category": "software",
+        "description": "Assistance with compatible operating system updates and related issues.",
+        "details": "The device and current software version are reviewed before performing or troubleshooting an available system update.",
+        "availability": "Depends on device compatibility"
+    },
+    {
+        "id": 10,
+        "name": "Device Setup",
+        "category": "software",
+        "description": "Basic configuration assistance for smartphones and common applications.",
+        "details": "Help with essential device settings, application configuration, and general setup after a reset or device change.",
+        "availability": "Available"
+    },
+    {
+        "id": 11,
+        "name": "Phone Cases",
+        "category": "accessory",
+        "description": "Protective cases available for different smartphone models.",
+        "details": "Different styles and models may be available depending on current inventory.",
+        "availability": "Subject to stock"
+    },
+    {
+        "id": 12,
+        "name": "Screen Protectors",
+        "category": "accessory",
+        "description": "Protective glass for compatible smartphone screens.",
+        "details": "Screen protectors help reduce scratches and everyday damage to the device display.",
+        "availability": "Subject to stock"
+    },
+    {
+        "id": 13,
+        "name": "Chargers",
+        "category": "accessory",
+        "description": "Charging adapters for compatible mobile devices.",
+        "details": "Available charger types vary according to connector, charging requirements, and current inventory.",
+        "availability": "Subject to stock"
+    },
+    {
+        "id": 14,
+        "name": "USB Cables",
+        "category": "accessory",
+        "description": "Charging and data cables for different mobile device connections.",
+        "details": "Cable availability may include USB-C, Lightning, Micro-USB, and other commonly used connections.",
+        "availability": "Subject to stock"
+    },
+    {
+        "id": 15,
+        "name": "Headphones",
+        "category": "accessory",
+        "description": "Wired and wireless audio options for compatible devices.",
+        "details": "Available models and connection types vary according to current inventory.",
+        "availability": "Subject to stock"
+    },
+    {
+        "id": 16,
+        "name": "Phone Speakers",
+        "category": "accessory",
+        "description": "Portable Bluetooth speakers for music and everyday use.",
+        "details": "Different portable speaker models may be available depending on current inventory.",
+        "availability": "Subject to stock"
+    }
+]

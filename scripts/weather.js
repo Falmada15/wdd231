@@ -46,7 +46,7 @@ function displayResults(data) {
 
     weatherIcon.setAttribute("alt", desc);
 
-    captionDesc.textContent = desc;
+    captionDesc.textContent = desc.replace(/\b\w/g, letter => letter.toUpperCase());
 
 }
 

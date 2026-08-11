@@ -1,0 +1,18 @@
+{
+  "family_name": "Almada",
+  "move_in_date": "2025-02-15",
+  "number_of_people": 2,
+  "visited_by_bishopric": true,
+  "family_members": [
+    {
+      "name": "Franco Taiel Almada",
+      "gender": "Male",
+      "birthdate": "1998-04-22"
+    },
+    {
+      "name": "Camila Almada",
+      "gender": "Female",
+      "birthdate": "1999-08-10"
+    }
+  ]
+}
